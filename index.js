@@ -54,7 +54,7 @@ inquirer
         readme = 
         `# ${response.title}\n ${generateLicense(response.license)}\n\n## Description\n${response.description}\n## Table of Contents\n\n * [Description](#description)\n\n * [Installation](#installation)\n\n * [Usage](#usage)\n\n * [Questions](#questions)\n\n * [License](#license)\n\n## Installation\n${response.installation}\n\n## Usage\n${response.usage}\n\n## License\nThe application is covered by ${response.license}\n\n## Contributing\n${response.contributing}\n\n## Test\n${response.test}\n\n## Questions\n[Github](https://github.com/${response.github})\n<br>[Email](mailto:${response.email})
         `
-        fs.writeFile(__dirname+'/output/sampleREADME.md', readme, (err) => {
+        fs.writeFile(__dirname+'/output/samplesREADME.md', readme, (err) => {
             err ? console.error(err) : console.log('README created!:)');
         });
         
